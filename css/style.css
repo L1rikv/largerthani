@@ -353,13 +353,13 @@ body {
 
 @media (max-width: 767.98px) {
 	.title-block__title {
-		font-size: 38px;
+		font-size: 36px;
 	}
 }
 
 @media (max-width: 400px) {
 	.title-block__title {
-		font-size: 30px;
+		font-size: 28px;
 	}
 	.title-block__suptitle {
 		font-size: 13px;
@@ -1321,6 +1321,7 @@ body {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		max-width: 147px;
 	}
 	.main-block__statistics {
 		-webkit-box-orient: vertical;
