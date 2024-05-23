@@ -1,0 +1,44 @@
+//========================================================
+//=====================OUR-SUPPORTERS=============================
+
+.our-supporters {
+	&__container {
+		// padding: 32px 15px 74px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 500;
+		letter-spacing: 2px;
+		color: #1d2130;
+
+		&:not(:last-child) {
+			margin: 0px 0px 32px 0px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		row-gap: 20px;
+		margin: 0px -19px;
+	}
+
+	&__item {
+		flex: 0 1 16.666%;
+		padding: 0px 19px;
+
+		img {
+			max-width: 100%;
+			min-width: 140px;
+		}
+	}
+
+	// @media (max-width: $pc) {
+	// 	&__container {
+	// 		padding: 32px 15px 45px;
+	// 	}
+	// }
+}

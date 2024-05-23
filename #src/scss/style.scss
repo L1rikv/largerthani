@@ -1,0 +1,90 @@
+//========================================================
+//=====================FONTS=============================
+@import 'fonts';
+
+//----------------variables--------------------
+$maxWidth-container: 1280px;
+$pcBig: 1199.98px;
+$pc: 991.98px;
+$tablet: 767.98px;
+$mobile: 475px;
+$mobileSmall: 320px;
+
+$mainText-color: #525560;
+$lightText-color: #fff;
+$mainPage-color: #fefdfc;
+$accentElement-color: #1d2130;
+$secondaryPage-color: #fcedc6;
+$elementsPage-color: #f2c94c;
+$mainText-fontSize: 16px;
+$secondaryText-fontSize: 14px;
+$mainTitle-fontSize: 56px;
+$secondTitle-fontSize: 48px;
+$thirdTitle-fontSize: 28px;
+$forthTitle-fontSize: 24px;
+
+//========================================================
+//=====================NULL CSS=============================
+@import 'null';
+svg {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-size: $mainText-fontSize;
+	font-weight: 400;
+	line-height: 19px / $mainText-fontSize * 100%;
+	font-family: 'Roboto';
+	color: $mainText-color;
+}
+
+//----------------wrapper--------------------
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+//----------------_ibg--------------------
+._ibg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+//----------------_lock--------------------
+._lock {
+	overflow: hidden;
+}
+
+//----------------container--------------------
+._container {
+	max-width: $maxWidth-container + 30px;
+	padding: 0px 15px;
+	margin: 0px auto;
+
+	@media (max-width: $pcBig) {
+		max-width: 990px;
+	}
+	@media (max-width: $pc) {
+		max-width: 800px;
+	}
+	@media (max-width: $pc) {
+		max-width: 800px;
+	}
+	@media (max-width: $tablet) {
+		max-width: none;
+	}
+}
+
+@import 'ui';
+@import 'header';
+@import 'home';
+@import 'footer';
+@import 'our-supporters';
+@import 'popups';

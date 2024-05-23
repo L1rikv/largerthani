@@ -1,0 +1,149 @@
+.footer {
+	background: #0b0706;
+
+	&__container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		column-gap: 55px;
+		row-gap: 35px;
+		padding: 96px 15px;
+		color: $lightText-color;
+	}
+
+	&__logo {
+		flex: 0 0 125px;
+		color: inherit;
+
+		// &:not(:last-child) {
+		// 	margin-right: 55px;
+		// }
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		gap: 88px;
+
+		// &:not(:last-child) {
+		// 	margin: 0px 55px 0px 0px;
+		// }
+	}
+
+	&__menu-column {
+		& > *:not(:last-child) {
+			&:not(:last-child) {
+				margin: 0px 0px 24px 0px;
+			}
+		}
+	}
+
+	&__menu-title {
+		font-weight: 700;
+		line-height: 160%;
+	}
+
+	&__menu-element {
+	}
+
+	&__menu-link {
+		opacity: 0.78;
+		transition: opacity 0.3s ease 0s;
+	}
+
+	&__subscribe {
+	}
+
+	&__subscribe-title {
+		max-width: 440px;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 140%;
+
+		&:not(:last-child) {
+			margin: 0px 0px 32px 0px;
+		}
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&__input {
+		flex: 1 1 auto;
+		padding: 23px;
+		background: inherit;
+		border: 1px solid rgba(235, 240, 249, 0.3);
+		border-radius: 4px;
+		border-right: none;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	&__button {
+	}
+
+	@media (min-width: $pc) {
+		&__menu-link {
+			text-underline-offset: 3px;
+			&:hover {
+				opacity: 1;
+				text-decoration: underline;
+			}
+		}
+	}
+	@media (max-width: $pcBig) {
+		&__container {
+			padding: 45px 15px;
+		}
+
+		&__menu {
+			gap: 44px;
+		}
+	}
+	@media (max-width: $pc) {
+		&__container {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		&__menu {
+			flex: 1 1 auto;
+			justify-content: space-evenly;
+		}
+
+		&__subscribe-title {
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+	@media (max-width: $tablet) {
+		&__subscribe-title {
+			font-size: 36px;
+		}
+	}
+	@media (max-width: 540px) {
+		&__container {
+			padding: 30px 15px;
+		}
+
+		&__menu {
+			justify-content: space-between;
+		}
+	}
+
+	@media (max-width: 400px) {
+		&__subscribe-title {
+			font-size: 28px;
+		}
+
+		&__input {
+			padding: 16px 10px 16px 14px;
+		}
+
+		&__button {
+			padding: 14px 16px;
+		}
+	}
+}
